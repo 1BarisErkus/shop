@@ -1,0 +1,63 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 2500,
+      "categoryId": 1,
+      "description": "Asus ZenBook"
+    },
+    {
+      "id": 2,
+      "name": "Mouse",
+      "price": 25,
+      "categoryId": 2,
+      "description": "A4Tech"
+    },
+    {
+      "id": 3,
+      "name": "Klavye",
+      "price": "50",
+      "categoryId": "2",
+      "description": "Mekanik klavye"
+    },
+    {
+      "id": 4,
+      "name": "Kulaklık",
+      "price": "60",
+      "categoryId": "2",
+      "description": "7+1"
+    },
+    {
+      "name": "i7 11700 16GB RAM",
+      "description": "Oyuncu bilgisayarı",
+      "price": "10000",
+      "categoryId": "1",
+      "id": 5
+    },
+    {
+      "name": "doğuhan",
+      "description": "boş adam",
+      "price": "1",
+      "categoryId": "1",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "name": "talha",
+      "price": "0.5",
+      "categoryId": "1",
+      "description": "kahpe"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Bilgisayar"
+    },
+    {
+      "id": 2,
+      "name": "Elektronik"
+    }
+  ]
+}

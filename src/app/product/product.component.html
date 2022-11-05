@@ -1,0 +1,25 @@
+<!-- <h3 *ngIf="products; else: noProduct">{{title}}</h3> -->
+<app-category></app-category>
+
+<ng-template #noProduct>
+    <div class="alert alert-primary" role="alert">
+        Bu kategoride ürün yok
+    </div>
+</ng-template>
+
+<div class="col-md-2 mb-3">
+    <input [(ngModel)]="val" class="form-control" id="searchInput" placeholder="Ürün ara">
+    <div *ngIf="val" id="emailHelp" class="form-text">Şu an {{val}} arıyorsunuz...</div>
+</div>
+
+<div class="row" *ngIf="products">
+
+    <div *ngFor="let product of products | productFilter:val" class="card mx-2 my-2 productBox" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{product.name}}</h5>
+            <p class="card-text">{{product.description}} </p>
+            <a routerLink="" (click)="addToCard(product)" class="btn btn-primary">{{product.price|currency:'USD':true:'1.2-2'}}</a>
+        </div>
+    </div>
+
+</div>
